@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="kn">
+
+<head>
+	<title>ವರ್ಣಮಾಲೆ ಕಲಿಕೆ</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kannada Varnamale, ಕನ್ನಡ ವರ್ಣಮಾಲೆ">
+    <meta name="author" content="Sudheendra">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/css.css" />
+</head>
+<body onload="init()">
+	<header class="brand-centered">
+		<img class="responsive-fluid" src="img/logo.png" alt="Logo - Varnamale Learning Page" width="50px" height="50px" >
+		<h1 class="text-center">ಕನ್ನಡ ವರ್ಣಮಾಲೆ</h1>
+	</header>
+	
+	<div class="container">
+		<canvas id="mycanvas"></canvas>
+	</div>
+	<div class="col-sm-12 text-center">
+      <div class="col-sm-6" >
+		<button onclick="chg_letters(2)">ಹಿಂದಿನ</button>
+		<select name="varnamaletype" id="varnamaletype" onchange="chg_varna()">
+			<option value="vowels" selected="selected">ಸ್ವರಗಳು</option>
+			<option value="consonents">ವ್ಯಂಜನಗಳು</option>
+			<option value="kaagunita">ಕಾಗುಣಿತ </option>
+		</select>
+		<button onclick="chg_letters(1)">ಮುಂದಿನ</button>
+	</div>
+	<div class="col-sm-6" id="">
+		<label for="color_chooser">ತಿದ್ದುವ ಬಣ್ಣ</label>
+		<input type="color" onchange="color_chooser(this)" value="#990099" name="color_chooser"/>
+	</div>
+    </div>
+	<form id="form">
+		<select id="select">
+		</select>
+	</form>
+	<script src="js/canvas.js"></script>
+	<script src="js/speechlist.js"></script>
+</body>

@@ -1,0 +1,49 @@
+#mycanvas {
+	border:1px solid #ffaa66;
+	width:auto;
+	/*max-width: 680px;
+	height:400px;*/
+	display:block;
+}
+
+body {
+	margin-left:1px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  /*position: relative;
+  min-height: 100%;*/
+}
+
+body {
+  margin-bottom: 5%; /* Margin bottom by footer height */
+  background-color: #e9e9e9;
+  padding:0 2px;
+}
+.footer {
+  position: fixed;
+  width: inherit;
+  /*max-width: 680px;*/
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.container {
+  /*width: auto;
+  max-width: 680px;*/
+  padding: 0 5px;
+}
+
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  max-width: 680px;
+  left: 0;
+  top: 0;
+
+}
